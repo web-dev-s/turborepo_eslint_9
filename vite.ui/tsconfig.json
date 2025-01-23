@@ -1,0 +1,7 @@
+{
+  "files": [],
+  "references": [
+    { "path": "../shared/typescript-config/tsconfig.app.json" },
+    { "path": "../shared/typescript-config/tsconfig.node.json" }
+  ] 
+}

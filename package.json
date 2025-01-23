@@ -1,0 +1,28 @@
+{
+  "name": "turborepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "start": "turbo start",
+    "start:dev": "turbo start:dev",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "rm -rf ./node_modules && rm -rf ./apps/docs/node_modules && rm -rf ./apps/web/node_modules && rm -rf ./node.api/node_modules && rm -rf ./shared/common/node_modules &&  rm -rf ./vite.ui/node_modules && rm -rf ./node.api/dist & rm -rf ./vite.ui/dist"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3"
+  },
+  "workspaces": [
+    "apps/*",
+    "node.api",
+    "shared/*",
+    "vite.ui"
+  ],
+  "packageManager": "npm@11.0.0"
+}
